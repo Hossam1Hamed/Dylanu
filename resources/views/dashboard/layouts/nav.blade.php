@@ -20,10 +20,9 @@
                         </svg>
                     </a>
                 </li>
-                <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Index</li>
+               
             </ol>
-            <h6 class="font-weight-bolder mb-0">Index</h6>
+            <h6 class="font-weight-bolder mb-0">@lang('dashboard.index')</h6>
 
         </nav>
         <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
@@ -41,8 +40,8 @@
                 <li class="nav-item d-flex align-items-center">
                     <a class="nav-link text-body p-0" href="" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="fa fa-sign-out-alt me-sm-1"></i>
-                        <span class="d-sm-inline d-none">log out</span>
-                        <span class="d-sm-inline d-none">admin</span>
+                        <span class="d-sm-inline d-none">@lang('dashboard.logout')</span>
+                        
                     </a>
                     <form id="logout-form" action="" method="POST" class="d-none">
                         @csrf
